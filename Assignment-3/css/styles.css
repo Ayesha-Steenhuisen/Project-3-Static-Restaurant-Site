@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: rgba(32, 67, 223, 0.931);
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 65px;
+}
+
+.navbar-brand h1 {
+  /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #000;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  color: #05C4F7;
+}
+
+div ul li a {
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/* END HEADER */
+
+
+.ourmenu {
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.food-1 {
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-image: linear-gradient(to right top, rgba(70, 51, 243, 0.856), rgba(143, 49, 119, 0.301));
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 10px 10px 10px 25px;
+}
+
+.food-2 {
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-image: linear-gradient(to right top, rgba(40, 21, 145, 0.774), rgba(143, 49, 119, 0.301));
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 10px 10px 10px 25px;
+}
+
+.food-3 {
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-image: linear-gradient(to right top, rgba(40, 21, 145, 0.774), rgba(143, 49, 119, 0.301));
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 10px 10px 10px 25px;
+}
+
+.foodname {
+  color: #000;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-center {
+  font-size: 23px;
+}
+
+.link {
+  list-style: none;
+  padding: 50px;
+  margin: 10px 0 10px 43%;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  /* background-image: linear-gradient(#31438abb, #7e90d89c), radial-gradient(circle at top left, #a73297b7, #9aac58d0); */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.link a {
+  color: black;
+}
+
+.link a:hover {
+  color: rgba(98, 61, 17, 0.884);
+}
+
+
+.row {
+  width: 100%;
+}
+
+/* from here is the style of how the viewers sees from
+diffrent typs of devics */
+
+/* DESKTOP MODE */
+
+@media (min-width: 991px) {
+  .column-lg {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/* TABLET MODE */
+
+
+@media (min-width: 641px) and (max-width: 990px) {
+  .colmn-md-1 {
+    float: left;
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    margin: 10px 0 10px 30%;
+  }
+
+  .colmn-md-2 {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* MOBILE MODE */
+@media (max-width: 640px) {
+  .colmn-sm {
+    float: left;
+    clear: left;
+    width: 100%;
+  }
+
+  .link {
+    margin: 10px 0 10px 20%;
+  }
+}
